@@ -10,8 +10,11 @@ html {
 {
     text-align: center;
     padding: 96px 16px;
-    background: url(../images/image1.png) center / cover;
+    background: url(../images/image1.png);
     border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
     border: 1px solid #333;
     max-width: 1770px;
     width: 100%;
@@ -20,7 +23,7 @@ html {
 .navigation
 {
     background-color: #5474FD  ;
-    max-width: 1773px;
+    max-width: 1770px;
     width: 100%;
     min-height: 83px;
 }
@@ -89,7 +92,9 @@ html {
 .navigation_menu a
 {
     color: #ffffff;
+    transition: color 0.3 ease;
 }
+
 .burger {
     display: none;
     color: #e0e0e0;
@@ -137,22 +142,22 @@ html {
 }
 
 .why-us{
+    max-width: 1770px;
+    width: 100%;
     min-height: 685px;
-    display: flex;
-    align-items: center;
     background: url(../images/why.png) center / cover no-repeat;
 }
 
 .why-us_inner{
-    display: grid;
-    align-items: center;
-    gap: 60px;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;  
 }
 
 .why-us_text{
+    color: #ffffff;
     h1{
-        font-family: Aleo;
         font-size: 34px;
         font-weight: 300;
         
@@ -160,22 +165,33 @@ html {
 
     p{
         max-width: 560px;
+        width: 100%;
         font-size: 14px;
         max-height: 158px;
-        
-        
     }
 }
 
 .button{
-    margin-top: 45px;
+     max-width: 144px;
+    width: 100%;
+    min-height: 63px;
+    background-color: #5474FD  ;
+    color: #ffffff  ;
 }
 
-.why-is_images{
+.why-us_images{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 280px;
+    gap: 20px;
     object-fit: cover;
-    transition:transform 0.3s ease;
+    transition: transform 0.3s ease;
 }
+
+.why-us_images:hover {
+    transform: scale(1.02);
+    opacity: 0.9;
+}
+
+
 
 
