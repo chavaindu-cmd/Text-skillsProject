@@ -1,10 +1,14 @@
 body
 {
-     font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
 }
 .hero
 {
-     text-align: center;
+    text-align: center;
     padding: 96px 16px;
     background: url(../images/image1.png) center / cover;
     border-radius: 10px;
@@ -33,7 +37,7 @@ body
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: end;
+    align-items: center;  
     
 }
 .navigation_menu
@@ -43,7 +47,7 @@ body
     justify-content: space-between;
     max-width: 525px;
     width: 100%;
-    max-height: 12px;
+    list-style: none;  
     
 }
 .logo
@@ -86,3 +90,92 @@ body
 {
     color: #ffffff;
 }
+.burger {
+    display: none;
+    color: #e0e0e0;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+}
+@media screen and (max-width: 600px) {
+
+    
+
+
+    nav {
+        position: relative;
+        flex-wrap: wrap;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .navigation_menu {
+        display: none;
+        bottom: 100%;
+        position: absolute;
+        max-height: none ;  
+        background-color: #5474FD;   
+        align-items: center ; 
+        
+    }
+    #menu-toggle:checked ~ .navigation_menu {
+        display: flex;
+        flex-direction: column ;
+         gap: 15px;
+         padding: 15px 0;
+    }
+
+
+    .burger:hover {
+        color: #511ab7;
+    }
+}
+
+.why-us{
+    min-height: 685px;
+    display: flex;
+    align-items: center;
+    background: url(../images/why.png) center / cover no-repeat;
+}
+
+.why-us_inner{
+    display: grid;
+    align-items: center;
+    gap: 60px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.why-us_text{
+    h1{
+        font-family: Aleo;
+        font-size: 34px;
+        font-weight: 300;
+        
+    }
+
+    p{
+        max-width: 560px;
+        font-size: 14px;
+        max-height: 158px;
+        
+        
+    }
+}
+
+.button{
+    margin-top: 45px;
+}
+
+.why-is_images{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    object-fit: cover;
+    transition:transform 0.3s ease;
+}
+
+
