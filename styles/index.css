@@ -81,9 +81,17 @@ html {
     background-color: #5474FD  ;
     color: #ffffff  ;
 }
+.search-btn:hover {
+    background-color: #3b5cd6; 
+    transform: translateY(-2px); 
+}
 .Scroll-down
 {
     color: #ffffff;
+}
+.Scroll-down:hover {
+    color: #5474FD;          
+    transform: translateY(4px); 
 }
 .navigation_menu
 {
@@ -93,6 +101,9 @@ html {
 {
     color: #ffffff;
     transition: color 0.3 ease;
+}
+.navigation_menu a:hover {
+    color: #b0c2ff; 
 }
 
 .burger {
@@ -105,42 +116,12 @@ html {
 #menu-toggle {
     display: none;
 }
-@media screen and (max-width: 600px) {
 
-    
-
-
-    nav {
-        position: relative;
-        flex-wrap: wrap;
-    }
-
-    .burger {
-        display: block;
-    }
-
-    .navigation_menu {
-        display: none;
-        bottom: 100%;
-        position: absolute;
-        max-height: none ;  
-        background-color: #5474FD;   
-        align-items: center ; 
-        
-    }
-    #menu-toggle:checked ~ .navigation_menu {
-        display: flex;
-        flex-direction: column ;
-         gap: 15px;
-         padding: 15px 0;
-    }
-
-
-    .burger:hover {
-        color: #511ab7;
-    }
+.button:hover {
+    background-color: #3b5cd6;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
-
 .why-us{
     max-width: 1770px;
     width: 100%;
@@ -182,6 +163,9 @@ html {
 .why-us_images{
     display: grid;
     grid-template-columns: 280px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(4,1fr)auto;
     gap: 20px;
     object-fit: cover;
     transition: transform 0.3s ease;
@@ -192,6 +176,55 @@ html {
     opacity: 0.9;
 }
 
+.firstimage {
+  grid-column: 1/5;
+  grid-row: 2/3;
+}
 
+.secondimage {
+  grid-column: 2/6;
+  grid-row: 3/4;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    nav {
+        position: relative;
+        flex-wrap: wrap;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .navigation_menu {
+        display: none;
+        bottom: 100%;
+        position: absolute;
+        max-height: none ;  
+        background-color: #5474FD;   
+        align-items: center ; 
+        
+    }
+    #menu-toggle:checked ~ .navigation_menu {
+        display: flex;
+        flex-direction: column ;
+         gap: 15px;
+         padding: 15px 0;
+    }
+
+
+    .burger:hover {
+        color: #511ab7;
+    }
+
+    .why-us_inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;  
+}
+}
 
 
