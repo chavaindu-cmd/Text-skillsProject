@@ -3,9 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bhromaon - Travel With Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-    
+    <header class="hero" id="home">
+        <div class="hero_overlay"></div>
+        <div class="container-hero_content">
+            <a href="#home" class="logo">
+               <h1>BHROMAON</h1> 
+               <p>Safe Travel Anywhere</p>
+            </a>
+            <form class="search-form" action="#" method="get">
+                <input type="search" id="search" name="search" placeholder="Search Your Travel Destination" required minlength="2">
+                <button type="submit" class="search-btn">SEARCH <i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+
+            <a href="#why-us" class="Scroll-down">Scroll Down <i class="fa-solid fa-chevron-down"></i></a>
+        </div>
+    </header>
+
+    <nav class="navigation" aria-label="Main navigation">
+        <div class="container_navigation_inner">
+            <a href="#home" class="navigation-logo">
+                <svg viewBox="0 0 186 20" width="186" height="20">
+                    <use href="Images/Logo1.svg#correct"></use>
+                </svg>
+            </a>
+            
+
+            <ul class="navigation_menu" id="navigation-menu">
+                <li>
+                    <a href="#why-us">Who We Are</a>
+                </li>
+                <li>
+                    <a href="#how-it-works">What We Do</a>
+                </li>
+                <li>
+                    <a href="#places">Travel With Us</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="why-us" id="why-us">
+            <div class="container why-us_inner">
+                <div class="why-us_text">
+                    <h1>Why Choose Us</h1>
+                    <p>Tion and dislike men who are so beguiled and demoralized by desire by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee</p>
+                    <p>Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that.</p>
+                    <a href="#places" class="button">Explore Places</a>
+                </div>
+
+                <div class="why-is_images">
+                    <img src="images/why1.png" alt="Beautiful house near a lake">
+                    <img src="images/why2.png" alt="Mountain landscape">
+                </div>
+            </div>
+        </section>
+
+        <section class="how-it_works" id="how-it_works">
+            <div class="container steps">
+                <article class="step">
+                    <div class="step-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                        <h2>Search Places</h2>
+                </article>
+
+                <article class="step">
+                    <div class="step-icon">
+                        <i class="fa-regular fa-circle-check"></i>
+                    </div>
+                        <h2>Select Places</h2>
+                </article>
+
+                <article class="step">
+                    <div class="step-icon">
+                        <i class="fa-regular fa-thumbs-up"></i>
+                    </div>
+                        <h2>Book &amp; Enjoy</h2>
+                </article>
+            </div>
+        </section>
+
+        <section class="place place-one" id="places">
+            <div class="container place_inner">
+                <article class="place-card">
+                    <p class="place-card_country">Spain</p>
+                    <h2>Grand Spain Madrid</h2>
+                    <p>But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</p>
+                    <a href="#contact" class="button">BOOK NOW</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="place place-two">
+            <div class="container place_inner--right">
+                <article class="place-card">
+                    <p class="place-card_country">Spain</p>
+                    <h2>Grand Spain Madrid</h2>
+                    <p>But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</p>
+                    <a href="#contact" class="button">BOOK NOW</a>
+                </article>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
